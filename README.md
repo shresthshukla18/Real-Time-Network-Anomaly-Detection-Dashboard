@@ -5,7 +5,7 @@ Overview: The Real-Time Network Anomaly Detection Dashboard is a cloud-based int
 
 Objectives: 
             
-             Detect real-time network anomalies using ML models.
+            Detect real-time network anomalies using ML models.
 
             Visualize live network traffic and anomaly patterns.
 
@@ -58,10 +58,23 @@ Installation:
         cd real-time-anomaly-dashboard
 
         # Install dependencies
-        pip install -r requirements.txt
+        pip install --upgrade pip
+        pip install -r requirements.txt 
+
+        # requirements.txt
+        streamlit==1.38.0
+        pandas==2.2.2
+        numpy==1.26.4
+        pytz==2024.1
+
+        # alternative for dependencies
+        pip install --upgrade pip
+        pip install streamlit pandas numpy pytz
+
 
         # Run the dashboard
-        python app.py
+        streamlit run Network_Anomaly_Detector_Streamlit.py
+
 
 Output: 
 
